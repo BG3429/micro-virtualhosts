@@ -27,8 +27,6 @@ class My extends ControllerBase{
 			
 			});
 
-			
-	//TODO1
 		
 				$vhosts=DAO::getAll("models\Virtualhost","idUser=".$user->getId());
 
