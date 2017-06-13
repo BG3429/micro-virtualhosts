@@ -26,12 +26,8 @@ class My extends ControllerBase{
 				
 			
 			});
-
-		
 				$vhosts=DAO::getAll("models\Virtualhost","idUser=".$user->getId());
-
 				$this->jquery->compile($this->view);
-
 				$this->loadView("My/index.html",array("tableau_vhosts"=>$vhosts));
 			
 		}
